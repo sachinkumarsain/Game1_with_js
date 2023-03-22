@@ -9,7 +9,7 @@ start.onclick = (e) => {
     wapper2.style.display = "flex";
 }
 let selectimage = "";
-let images = document.querySelector('.wapper2 img')
+let images = document.querySelectorAll('.wapper2 img')
 // console.log(images)
 for (let i = 0; i < images.length; i++) {
     images[i].onclick = () => {
