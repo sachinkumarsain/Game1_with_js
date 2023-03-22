@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wapper1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #B79891;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #94716B, #B79891);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper1 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.wapper1 a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 25px;
+    border-radius: 20px;
+    background: #232526;
+    box-shadow: 0 0 3px 3px rgb(68, 63, 63);
+    font-size: 20px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper1 a:hover {
+    background: #0d0d0d;
+
+    font-size: 20px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #111111);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #161617, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper2 {
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper2 .box1 {
+    width: 60%;
+    height: 250px;
+    text-align: center;
+}
+
+.wapper2 .box1 .images {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.wapper2 .box1 .images img {
+    height: 100%;
+    width: 25%;
+    box-shadow: 0 0 5px 5px rgb(72, 68, 68);
+    margin: 0px 10px;
+    border-radius: 1px;
+    transition: all 1s ease;
+}
+
+.wapper2 .box1 .images img:hover {
+    transform: scale(1.1);
+}
+
+.wapper3 {
+    height: 100vh;
+    background: #C6FFDD;
+    display: none;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper3 .head {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between;
+    color: white;
+    padding: 8px 40px 8px 20px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper3 .gamearea {
+    background: #C6FFDD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper4 {
+    height: 100vh;
+    background: #BBD2C5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper4 .box2 {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+    background: #2980B9;
+    box-shadow: 0 0 5px 5px gray;
+    border-radius: 2px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wapper4 .box2 .finalcontaint {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.wapper4 .box2 .finalcontaint h2 {
+    margin: 0px 25px;
+}
