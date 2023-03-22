@@ -2,6 +2,8 @@ let wapper1 = document.querySelector('.wapper1');
 let wapper2 = document.querySelector('.wapper2');
 let wapper3 = document.querySelector('.wapper3');
 let start = document.querySelector('.wapper1 a');
+let wapper4=document.querySelector('.wapper4');
+
 
 start.onclick = (e) => {
     e.preventDefault()
@@ -12,6 +14,7 @@ let selectimage = "";
 let images = document.querySelectorAll('.wapper2 img')
 // console.log(images)
 let time = 0;
+let scorecount=0;
 for (let i = 0; i < images.length; i++) {
     images[i].onclick = () => {
         selectimage = images[i].src;
@@ -19,10 +22,15 @@ for (let i = 0; i < images.length; i++) {
         wapper3.style.display = "flex";
         // letsplay();
         let x = setInterval(() => {
-            if (time === 30) {
+            if (time === 6) {
                 clearInterval(x)
                 alert(`${'time up'} 
-                    ${"score:-"} ${score}`)
+                    ${"score:-"} ${scorecount}`)
+                    wapper3.style.display="none";
+                    wapper4.style.display="flex";
+                document.querySelector('.wapper4 .finalscore').innerHTML='Score:- '+scorecount;
+                document.querySelector('.wapper4 .finaltime').innerHTML="time:- "+time;
+
             }
             else {
                 timer.innerHTML = ++time;
@@ -31,7 +39,7 @@ for (let i = 0; i < images.length; i++) {
         }, 1000);
         let y = setInterval(() => {
             repeatimage()
-        }, 500);
+        }, 0.008);
 
     }
 }
@@ -44,7 +52,7 @@ function letsplay() {
 }
 function repeatimage() {
 
-    const img = document.querySelector('img');
+    const img = document.createElement('img');
     img.setAttribute('src', selectimage);
 
     // console.log(img)
@@ -61,12 +69,31 @@ function repeatimage() {
 
 }
 function randomimgleft() {
-    return Math.random() * window.innerWidth + "px";
+    return Math.random() *( window.innerWidth-100) + "px";
 }
 
 function randomimgtop() {
-    return Math.random() * window.innerHeight + "px";
+    return Math.random() *( window.innerHeight-100) + "px";
 }
 function removeimg(element) {
-    element.remove()
+    element.remove();
+    score.innerHTML=scorecount;
+    scorecount++;
+
+
 }
+// function randomimgleft() {
+//     return Math.random() *( window.innerWidth-100) + "px";
+// }
+
+// function randomimgtop() {
+//     return Math.random() *( window.innerHeight-100) + "px";
+// }
+// function removeimg(element) {
+//     element.remove();
+//     score.innerHTML=scorecount;
+//     scorecount++;
+
+
+// }
+
