@@ -20,3 +20,36 @@ for (let i = 0; i < images.length; i++) {
 
     }
 }
+const timer=document.querySelector('.timer span')
+const score=document.querySelector('.score span');
+ 
+function letsplay(){
+    let time=0;
+    let x=setInterval(() => {
+        if(time===30){
+            clearInterval(x)
+            alert(`${'time up'} 
+                ${"score:-"} ${score}`)
+        }
+        else{
+            timer.innerHTML=++time;
+            repeatimage();
+        }
+    }, 100);
+}
+function repeatimage(){
+
+    const img=document.querySelector('img');
+    img.setAttribute('src',selectimage);
+
+    // console.log(img)
+
+    img.style.left=randomimgleft();
+    img.style.top=randomimgright();
+
+    img.setAttribute("onclick","removeimg()")
+
+    document.querySelector('.wapper3 .gamearea').innerHTML.append(img);
+
+}
+

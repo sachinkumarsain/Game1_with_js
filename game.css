@@ -87,6 +87,7 @@
     margin: 0px 10px;
     border-radius: 1px;
     transition: all 1s ease;
+
 }
 
 .wapper2 .box1 .images img:hover {
@@ -95,6 +96,7 @@
 
 .wapper3 {
     height: 100vh;
+    position: relative;
     background: #C6FFDD;
     display: none;
     /* fallback for old browsers */
@@ -104,12 +106,7 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.wapper3 .head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px 20px 10px;
-}
+
 
 .wapper3 .gamearea {
     background: #C6FFDD;
